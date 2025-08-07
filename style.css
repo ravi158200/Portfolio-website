@@ -1,0 +1,110 @@
+*{ margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body { front-family: 'segoe UI',sans-serif;
+    line-height: 1.6;
+    background:#f4f4f4;
+    color: #333;
+}
+header { background:#222;
+color:#fff;
+padding: 2rem  0;
+text-align: center;
+}
+
+nav {display:flex;
+justify-content: space-between;
+align-items:center;
+padding:0 2rem;
+}
+
+nav h1 {font-size:1.8rem;
+}
+nav ul {display: flex;
+gap: 1rem;
+list-style:none;
+}
+
+nav a{ color:#fff;
+text-decoration: none;
+padding:0.5rem;
+transition:0.3rem;
+}
+
+nav a :hover {background:#444;
+border-radious: 5px;
+}
+
+
+.hero {margin-top: 1rem;
+}
+
+setion{ padding: 4rem 2rem;
+    text-align: center;
+
+}
+
+
+.skills-grid, .projects-grid {display: grid;
+grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+gap:1.5rem;
+margin-top: 2rem;
+}
+
+
+.skills-grid div, .projects-card div {background:#fff;
+paddding: 1rem;
+border-radious: 8px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+transition: transform 0.3s;
+}
+
+.project-card:hover, skills-grid div:hover {transform: tranlateY (-5px);
+}
+
+form { max-width: 500px;
+margin: auto;
+display:flex;
+flex-direction: column;
+gap: 1rem;}
+
+
+input,textarea { padding: 0.8rem;
+border: 1px solid #ccc;
+border-radious: 5px;
+}
+
+button { background: #be3d3d;
+color: #fff;
+border: 2px;
+padding: 0.8rem;
+border-image-repeat: 5px;
+cursor: pointer;
+transition: 0.3s;
+
+}
+
+
+buton:hover { background: #444;
+}
+
+
+footer { text-align: center;
+padding: 1rem;
+background: #222;
+color: #fff;
+}
+
+
+/*Responsive */
+@media (max-width: 768px)
+{
+    nav ul
+    
+    { 
+        box-direction: column;
+    gap: 0.5rem;
+}
+}
